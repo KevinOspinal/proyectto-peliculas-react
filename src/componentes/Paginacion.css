@@ -1,0 +1,8 @@
+.custom-li a:hover{
+    box-shadow: 5px 10px 20px  white;
+    transition: all 0.8s linear;
+    font-size: 13pt;
+}
+.custom-li a{
+    color: black;
+}
