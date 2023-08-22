@@ -1,0 +1,64 @@
+import React, { useState, useEffect } from 'react';
+import Paginacion from './Paginacion';
+import Tarjeta from './Tarjeta';
+
+// ... Otras importaciones ...
+
+export default function SectionTemporadas({ temporada1Eventos, temporada2Eventos }) {
+  const [temporadaSeleccionada, setTemporadaSeleccionada] = useState(1);
+  const [eventosTemporada, setEventosTemporada] = useState([]);
+
+  const temporadasEventos = {
+    1: temporada1Eventos,
+    2: temporada2Eventos,
+    // Agrega más temporadas aquí si es necesario
+  };
+
+  useEffect(() => {
+    setEventosTemporada(temporadasEventos[temporadaSeleccionada]);
+  }, [temporadaSeleccionada]);
+
+  const cambiarTemporada = (temporadaId) => {
+    setTemporadaSeleccionada(temporadaId);
+  };
+
+  return (
+    <section className='container-fluid d-flex justify-content-center align-items-center h-100'> 
+      <div className='row mt-4'>
+        <div className='col-12 d-flex justify-content-center'>
+          <Paginacion paginacion={Temporadas} cambiarTemporada={cambiarTemporada} />
+        </div>
+        {
+          eventosTemporada.map((episodio) => (
+            <div className="col-sm-6 col-md-4 col-lg-4 my-5">
+              <Tarjeta sucesos={episodio.sucesos} nombre={episodio.titulo} img={episodio.img} historia={episodio.descripcion}/>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+  );
+}
+
+import React from "react";
+import './Paginacion.css'
+
+export default function Paginacion({paginacion,cambiarTemporada}) {
+  return (
+    <nav aria-label="Page navigation example">
+      <ul className="pagination flex-wrap">
+        {paginacion.map((pagina) => (
+          <li className="page-item custom-li" key={pagina.id}>
+            <a
+              className="page-link"
+              href="#"
+              onClick={() => cambiarTemporada(pagina.id)}
+            >
+              {pagina.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+}

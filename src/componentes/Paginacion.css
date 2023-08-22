@@ -1,0 +1,26 @@
+
+.custom-li a:hover{
+    box-shadow: 5px 10px 20px  white;
+    transition: all 0.3s linear;
+    font-size: 13pt;
+}
+.custom-li a{
+    color: black;
+}
+
+.rounded-text {
+    display: inline-block;
+    border: 1px solid #ccc; /* Define el color y grosor del borde */
+    border-radius: 100%; /* Hace que el borde sea circular */
+    padding: 5px 15px; /* Ajusta el espaciado interno para que el texto no quede demasiado cerca del borde */
+  }
+
+.contenedor-paginacion-fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%; /* Ajusta el ancho según tus necesidades */
+}
+
+.contenedor-paginacion{
+  background-color: #251B37;
+}

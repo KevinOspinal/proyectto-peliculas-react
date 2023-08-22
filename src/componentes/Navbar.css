@@ -1,0 +1,13 @@
+/* Barra de navegacion */
+.navbar{
+    padding: 0.5rem;
+    background-color: #251B37;
+}
+.navbar-collapse {
+    align-items: center;
+    justify-content: center;
+}
+.nav-link{
+    color: white;
+    margin-right: 50pt;
+}

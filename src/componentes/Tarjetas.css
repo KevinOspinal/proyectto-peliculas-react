@@ -1,0 +1,20 @@
+
+.card:hover{
+    box-shadow: 5px 10px 20px 1px rgb(114, 26, 11);
+    transition: all 0.8s linear;
+}
+
+.card-body{
+    padding: 1rem 0 !important;
+}
+.card-text{
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    max-height: 100px; /* Establece la altura máxima deseada */
+    overflow: hidden;
+}
+  /* Estilo para mostrar todo el contenido cuando el usuario haga clic en "Ver más" */
+.card-text.expanded {
+    max-height: none;
+  }
+  
