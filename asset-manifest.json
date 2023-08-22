@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/proyectto-peliculas-react/tree/master/static/css/main.99eebac9.css",
+    "main.js": "/proyectto-peliculas-react/tree/master/static/js/main.f5cc7c17.js",
+    "static/media/fondoportada2.png": "/proyectto-peliculas-react/tree/master/static/media/fondoportada2.f8eca57f077cc8082ad0.png",
+    "static/media/logogafas.png": "/proyectto-peliculas-react/tree/master/static/media/logogafas.5dee4c3b8879b6214b2d.png",
+    "index.html": "/proyectto-peliculas-react/tree/master/index.html",
+    "main.99eebac9.css.map": "/proyectto-peliculas-react/tree/master/static/css/main.99eebac9.css.map",
+    "main.f5cc7c17.js.map": "/proyectto-peliculas-react/tree/master/static/js/main.f5cc7c17.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99eebac9.css",
+    "static/js/main.f5cc7c17.js"
+  ]
+}
